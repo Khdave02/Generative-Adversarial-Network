@@ -4,7 +4,7 @@ from torch.utils.data import DataLoader
 img_size=64
 transform = transforms.Compose([
 transforms.Resize((img_size,img_size)),
-transforms.RandomHorizontalFlip(),
+
 transforms.ToTensor(),
 transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
 def trainLoader(batch_size):
